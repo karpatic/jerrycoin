@@ -27,11 +27,37 @@
 
     <!-- Custom styles for this template -->
     <style>
-	  .jumbotron{    background-color: #f3ece2;   background-image: url("./coverphoto.PNG"); min-height:500px;}
-	  .jumbotron.text-center> .container{ background: black; opacity: .96; background-repeat: no-repeat; margin-top:40px;}
-	  .album{    background-color: #F2A51F !important;    }
+@media only screen and (max-width: 1400px) { 
+	  .jumbotron{    
+	  background-color: #f3ece2;    
+      background-image: url("./coverphoto.PNG");  
+      min-height:500px;
+      }
+	  .jumbotron.text-center> .container{ 
+	  background: black; opacity: .96; ; 
+	  margin-top:40px;}
+	  
+}
+
+@media only screen and (min-width: 1400px) { 
+	  .jumbotron{    
+	  background-color: #f3ece2;    
+      background-image: url("./coverphoto.PNG");  
+      min-height:600px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+      }
+	  .jumbotron.text-center> .container{ 
+	  background: black; opacity: .96;
+	  margin-top:60px; 
+	  }
+	  
+}
+
+
+      .album{    background-color: #F2A51F !important;    }
 	  body{    background-color: #1e4151    }
-	  // background-image: url("https://dogecoin.com/imgs/dogecoin-300.png");
 	</style>
   </head>
 
@@ -65,7 +91,16 @@
       <div class="navbar navbar-dark box-shadow">
         <div class="container d-flex justify-content-between">
           <a href="https://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand d-flex align-items-center">
+            <!--
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            -->
+            <svg style='margin-right:5px' height='25px' width='25px'  fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" viewBox="0 0 100 100" version="1.1" x="0px" y="0px">
+            <title>Hollow</title>
+            <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g sketch:type="MSArtboardGroup">
+            <path d="M95,50 C95,75 75,95 50,95 C25,95 5,75 5,50 C5,25 25,5 50,5 C75,5 95,25 95,50 Z" stroke="#EEEEEE" stroke-width="10" sketch:type="MSShapeGroup"></path>
+            <path d="M32.9312614,55.3085714 L32.9312614,76 L50.7370996,76 C65.0861267,76 75,64.8528571 75,50.4271429 C75,36.0014286 65.0861267,25 50.7370996,25 L32.9312614,25 L32.9312614,45.4 L26,45.4 L26,55.3085714 L32.9312614,55.3085714 Z M42,45.3578199 L42,35 L50.0180723,35 C58.3674699,35 64,41.3909953 64,50.5734597 C64,59.7559242 58.3674699,66 50.0180723,66 L42,66 L42,55.3483412 L52.0722892,55.3483412 L52.0722892,45.3578199 L42,45.3578199 Z"  fill="#EEEEEE" sketch:type="MSShapeGroup"></path>
+            </g></g></svg>
             <strong>Jerry Fomenta</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,138 +125,86 @@
       <div class="album py-5 bg-light">
         <div class="container">
 
-          <div class="row">
+          <div class="row" id='jerryfeed'>
 		    <div class="col-sm-12">
-		    <h2> Videos and Links: <br> <small> Check youtube for up to date information on my latest videos! <br> I may be on LIVE</small></h2>
+				<h2> Disclaimer: </h2>
+				<p>At the moment this is a Jerry Fomenta fan site. <br>
+				   It was made on his behalf without his knowledge or consent. <br>
+				   Any text on this page written as though he is saying it is purely for the sites aesthetic. <br>
+				   Ownership over the domain name and this site's content will readily be relinquished upon his request. <br>
+				   Now that this template is up, any further development will only be performed under Jerry's mandate.
+				</p>
+				<h2> Videos and Links: <br> </h2>
 			</div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="./doge.png" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./doge.png" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">🚀 Day 16: Dogecoin Live Stream - Part 3</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href='https://www.youtube.com/watch?v=d7SjQ5LGO6g'>View</a></button>
-                    </div>
-                    <small class="text-muted">1:58:52</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="./doge.png" alt="Thumbnail [100%x225]" src="./doge.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                <div class="card-body">
-                  <p class="card-text">🚀 Day 15: Dogecoin Live Stream - Part 2</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href='https://www.youtube.com/watch?v=GYPHluuFoYA'>View</a></button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="./doge.png" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./doge.png" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">🚀 Day 14: Dogecoin Live Stream - Part 1</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href='https://www.youtube.com/watch?v=togGogyUsGw&t=2151s'>View</a></button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+			<style>
+#myGlower {
+    border: 1px solid transparent;    
+    -webkit-transition: border 0.1s linear, box-shadow 0.1s linear;
+       -moz-transition: border 0.1s linear, box-shadow 0.1s linear;
+            transition: border 0.1s linear, box-shadow 0.1s linear;
+}
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="./doge.png" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./doge.png" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">🚀 Day 15: Dogecoin Live W/ (Millionaire) Nick Ballz - Part 3</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href='https://www.youtube.com/watch?v=dWd7sNVWbFk'>View</a></button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="./doge.png" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./doge.png" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">🚀 Day 15: Dogecoin Live Stream - Part 2</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href='https://www.youtube.com/watch?v=ebGBJec0hwQ'>View</a></button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="./doge.png" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./doge.png" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">🚀 Day 15: Dogecoin Live Stream - Part 1</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href='https://www.youtube.com/watch?v=upkJrlKxQbc'>View</a></button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+#myGlower.active {
+    border-color: red;
+    -webkit-box-shadow: 0 0 5px red;
+       -moz-box-shadow: 0 0 5px red;
+            box-shadow: 0 0 5px red;
+}
+			</style>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js" integrity="sha512-L03kznCrNOfVxOUovR6ESfCz9Gfny7gihUX/huVbQB9zjODtYpxaVtIaAkpetoiyV2eqWbvxMH9fiSv5enX7bw==" crossorigin="anonymous"></script>
+			<script>
+			    var jerrysYoutubeChannelData = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyCXiFAvZKLmqsi1-nvYCNsF7NIvjqzNGwc&channelId=UC9F4Aht7kErGCxI61SaDydA&part=snippet,id&order=date&maxResults=20'
+				fetch(jerrysYoutubeChannelData).then(function (response) {
+					// The API call was successful!
+					return response.json();
+				}).then(function (data) {
+					// This is the JSON from our response
+					data.items.map( v => {
+						s = v.snippet
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="./doge.png" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./doge.png" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">🚀 Day 14: Dogecoin Live Chat - Part 3</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href='https://www.youtube.com/watch?v=BF4WEfy6hxM'>View</a></button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="./doge.png" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./doge.png" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">🚀 Day 14: Dogecoin Live Stream - Part 2</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href='https://www.youtube.com/watch?v=ZS4bfoBJmxQ'>View</a></button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="./doge.png" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./doge.png" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">🚀 Day 14: Dogecoin Live Stream - Part 1</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href='https://www.youtube.com/watch?v=oDKLHAXxl_8'>View</a></button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+						let glower = s.liveBroadcastContent=='live' ? 'myGlower' : '';
+
+						let template = `          
+						<div class="col-md-4">
+						  <div class="card mb-4 box-shadow" id="${glower}">
+							<img class="card-img-top" data-src="./doge.png" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" 
+							  src="${s.thumbnails.medium.url}" data-holder-rendered="true">
+							<div class="card-body">
+							  <p class="card-text">${s.title}</p>
+							  <div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+								  <button type="button" class="btn btn-sm btn-outline-secondary">
+								    <a href='https://www.youtube.com/watch?v=${v.id.videoId}'>
+								      View ${s.liveBroadcastContent=='live'? '<span color=red>live</span>': ''}
+								    </a>
+								  </button>
+								</div>
+								<small class="text-muted">Published: ${s.publishTime}</small>
+							  </div>
+							</div>
+						  </div>
+						</div>
+						`
+
+						let jerryfeed = document.getElementById('jerryfeed');
+						jerryfeed.insertAdjacentHTML('beforeend', template);
+					})
+
+						var i = 0;
+						var glow = document.getElementById('myGlower');
+						setInterval(function(){
+						  if(i == 0) { glow.setAttribute('class','card mb-4 box-shadow active'); i++; } 
+						  else { 
+						    glow.removeAttribute('class'); i = 0; 
+						    glow.setAttribute('class','card mb-4 box-shadow')
+						  }
+						},1000);
+				}).catch(function (err) {
+					// There was an error
+					console.warn('Something went wrong.', err);
+				});
+			</script>
+
           </div>
         </div>
       </div>
